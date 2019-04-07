@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {background: #FFFFFF url(./imagenes/sena1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header"
+                         "contenido contenido sidebar"
+                         "widget-1 widget-1 sidebar"
+                         "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .sidebar,
+.contenedor .contenido,
+.contenedor .footer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.contenedor .header {
+    background:  #12203E;
+    color: #fff;
+   /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-area: header;
+}
+
+/* en el grid column si no se sabe cuantas columnas hay
+usamos el "-1"*/
+
+.contenedor .contenido {
+    /* grid-column:  span 2; */
+    grid-area: contenido;
+    background-color: rgba(0, 0, 0, 0.5);
+        color:#000;
+}
+
+.contenedor .sidebar {
+    grid-column: 3 / 4;
+    background-color: rgba(0, 86, 102, 0.9);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    /* grid-row: 2 / 4; */
+    grid-area: sidebar;
+}
+
+/* en grid row tambien se puede usar "span" */
+
+.contenedor .widget-1 {
+    grid-area: widget-1;
+    background-color: rgba(0, 81, 81, 0.8);
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenedor .footer {
+    /* grid-column: span 3; */
+    grid-area: footer;
+    background-color: rgba(255, 255, 255, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+@media screen and (max-width: 768px) {
+    .contenedor .contenido {
+        grid-column: 1 /-1;
+    }
+    .contenedor .sidebar {
+        grid-column: 1/-1;
+    }
+    .contenedor .widget-1 {
+        grid-column: span 2;
+    }
+}
+*/
+
+@media screen and (max-width: 760px) {
+  body {
+    background-image: url(./imagenes/sena1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #0CE3B2;
+    max-width: 100%;
+  }
+    .contenedor {
+        grid-template-areas: "header header header"
+                         "contenido contenido contenido"
+                         "sidebar sidebar sidebar"
+                         "widget-1 widget-1 widget-1"
+                         "footer footer footer";
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    iframe {
+      max-width: 250px;
+      max-height: 400px;
+    }
+}
+
+.navegacion{
+    background-color: rgba(0, 0, 0, 0.7);
+    color:#000;
+  }
+
+  .navegacion ul{
+    list-style: none;
+  }
+
+  .menu > li{
+    position: relative;
+    display: inline-block;
+  }
+
+  .menu  li  a{
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+  }
+
+  .menu li a:hover{
+    color: #27F3B5;
+    transition: all .3s;
+  }
+
+  /* Submenu*/
+
+  .submenu{
+    position: absolute;
+    background: #1B8B69;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+  }
+
+  .submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+  }
+
+  .menu li:hover .submenu{
+    visibility: visible;
+    opacity: 3;
+  }
+
+  /* Parrafos*/
+
+
+   p.Titulo {
+     font-family: "Indie Flower", cursive;
+     font-size: 500%;
+     text-align: center;
+   }
+
+   p.Titulo:hover{
+     color: #27F3B5;
+     transition: all .3s;
+   }
+
+   p.aloha {
+         font-family: 'Pacifico', cursive;
+         font-size: 130%;
+         text-align: center;
+       }
+
+  p.genial {
+        font-family: 'Monoton', cursive;
+        font-size: 200%;
+        text-align: center;
+      }
+
+    p.dias {
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 130%;
+        text-align: center;
+        margin-left: 50px;
+        text-align: left;
+      }
+
+      p.game {
+          font-family: 'Press Start 2P', cursive;
+          font-size: 100%;
+          text-align: center;
+        }
+
+      p.brush {
+          font-family: 'Nanum Brush Script', cursive;
+          font-size: 200%;
+          text-align: center;
+        }
+
+      div.fondotransparente{
+          background-color: rgba(0, 0, 0, 0.5);
+          color:#000;
+          border-radius: 15px;
+          margin: 5px auto;
+      }
+
+      p.brushf {
+        font-family: 'Nanum Brush Script', cursive;
+        font-size: 500%;
+        text-align: center;
+      }
+
+      .lista{
+       font-family: 'Pacifico', cursive;
+       font-size: 20px;
+       text-align: center;
+       margin: 20px  200px auto;
+       
+      }
+
+      .video{
+        border-radius: 15px;
+      }

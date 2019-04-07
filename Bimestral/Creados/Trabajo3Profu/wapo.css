@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+BODY{ 
+     background: white url(sena.png);
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     box-sizing: border-box;
+     
+}
+
+
+form{
+     background-color: white;
+     margin: 1 auto;
+     width: 300px;
+     color: #999;
+     border-radius: 10px;
+     margin: 0 auto;
+     padding: 20px;
+}
+
+p.normi {
+        font-family: 'ZCOOL QingKe HuangYou', cursive;
+        font-size: 50px;
+        text-align: center;
+}
+
+input, textarea{
+                
+                outline: none;
+                width: 280px;
+                
+
+.field{
+       border: solid 1px #ccc;
+       padding: 10px;
+       width: 280px;
+}
+
+.field:focus{
+             border-color: #18A383;
+}
+
+.center{
+        text-align: center;
+}
+       
+
+
+

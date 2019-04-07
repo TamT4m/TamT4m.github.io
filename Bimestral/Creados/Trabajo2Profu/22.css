@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Coiny');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+BODY { background: white url(frutas.jpg);
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;}
+
+p.hola {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 30px;
+        text-align: center;
+}
+
+p.titulo{
+         font-family: 'Coiny', cursive;
+         font-size: 200%;
+         text-align: center;
+}
+
+.lista{
+       font-family: 'Courgette', cursive;
+       font-size: 30px;
+       text-align: center;
+}
+div.fondotransparente{
+    background-color: rgba(0, 0, 0, 0.5);
+    color:#000;
+}
