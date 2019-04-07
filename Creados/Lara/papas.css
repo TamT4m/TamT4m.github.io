@@ -1,0 +1,61 @@
+
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Brush+Script');
+
+BODY { background: white url(sena.png);
+       background-attachment: fixed;
+       background-position: center;
+       background-repeat: no-repeat;}
+
+#fotos img { margin-left:0px; }
+
+
+
+
+ p.Titulo {
+   font-family: "Indie Flower", cursive;
+   font-size: 500%;
+   text-align: center;
+   color:
+ }
+
+ p.aloha {
+       font-family: 'Pacifico', cursive;
+       font-size: 130%;
+       text-align: center;
+     }
+
+p.genial {
+      font-family: 'Monoton', cursive;
+      font-size: 200%;
+      text-align: center;
+    }
+
+  p.dias {
+      font-family: 'Shadows Into Light Two', cursive;
+      font-size: 130%;
+      text-align: center;
+      margin-left: 50px;
+      text-align: left;
+    }
+
+    p.game {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 100%;
+        text-align: center;
+      }
+
+    p.brush {
+        font-family: 'Nanum Brush Script', cursive;
+        font-size: 100%;
+        text-align: center;
+      }
+
+    div.fondotransparente{
+        background-color: rgba(0, 0, 0, 0.5);
+        color:#000;
+    }
